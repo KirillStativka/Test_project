@@ -1,13 +1,78 @@
 @import "bourbon"
 @import "vars.sass"
-
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
+	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden
 
 .hidden
 	display: none
+.top_line
+	background: #f0f3f8
+	height: 40px
+	.top_line_mnu
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+		height: 40px
+		li
+			display: flex
+			align-items: center
+			a
+				font-size: 14px
+				color: #454647
+			&:first-child
+				a
+					color: #fff
+					background: #ee3346
+					border-radius: 20px
+					padding: 1px 19px
+					transition: all 0.75s
+					border: 1px solid #ee3346
+				a:hover
+					text-decoration: none
+					background: #fff
+					color: #ee3346
+			span
+				background: url(../img/chevron.png) no-repeat center
+				width: 10px
+				height: 10px
+				display: inline-flex
+				margin-left: 5px
+.top_line_mnu_right
+	display: flex
+	flex-flow: row wrap
+	justify-content: flex-end
+	height: 40px
+	li
+		display: flex
+		align-items: center
+		.input_holder
+			input[type="search"]
+				display: none
+			.icon_search
+				background: url(../img/icon_set.png) no-repeat
+				background-position: -6px -69px
+				width: 23px
+				height: 23px
+				cursor: pointer
+				display: block
+		.kabinet_log_wrap
+			display: none
+		.icon_kabinet
+			background: url(../img/icon_set.png) no-repeat
+			background-position: -50px -69px
+			width: 24px
+			height: 26px
+			display: block
+			cursor: pointer
+			&:after
+				content: ""
+				background: url(../img/chevron.png) no-repeat center
+				width: 10px
+				height: 10px
+				display: inline-flex
+				margin-left: 30px
