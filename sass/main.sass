@@ -28,6 +28,34 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
+.breadcrubms_wrap
+	ul
+		display: flex
+		flex-flow: row wrap
+		padding: 30px 15px
+		li
+			display: flex
+			&:after
+				content: "→"
+				display: inline-flex
+				margin: 0px 10px
+				color: #666666
+			&:last-child:after
+				content: ""
+			a
+				color: #999999
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //ALWAYS END
