@@ -1,7 +1,7 @@
 @import "bourbon"
 @import "vars.sass"
 body
-	font-size: 16px
+	font-size: 15px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
@@ -16,7 +16,7 @@ body
 	.top_line_mnu
 		display: flex
 		flex-flow: row wrap
-		justify-content: space-around
+		justify-content: space-between
 		height: 40px
 		li
 			display: flex
@@ -45,7 +45,7 @@ body
 .top_line_mnu_right
 	display: flex
 	flex-flow: row wrap
-	justify-content: flex-end
+	justify-content: space-around
 	height: 40px
 	li
 		display: flex
@@ -55,7 +55,7 @@ body
 				display: none
 			.icon_search
 				background: url(../img/icon_set.png) no-repeat
-				background-position: -6px -69px
+				background-position: -9px -109px
 				width: 23px
 				height: 23px
 				cursor: pointer
@@ -64,7 +64,7 @@ body
 			display: none
 		.icon_kabinet
 			background: url(../img/icon_set.png) no-repeat
-			background-position: -50px -69px
+			background-position: -52px -108px
 			width: 24px
 			height: 26px
 			display: block
@@ -76,3 +76,88 @@ body
 				height: 10px
 				display: inline-flex
 				margin-left: 30px
+.cart_header
+	background: url(../img/icon_set.png) no-repeat
+	background-position: -96px -108px
+	width: 26px
+	height: 26px
+	display: block
+	cursor: pointer
+.header_logo
+	padding: 20px 0px
+	a
+		margin-left: 10px
+.contact_header
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around
+	padding: 20px 0px
+	margin-left: -28px
+	ul
+		li
+			color: #2c2c2c
+			a
+				color: #2c2c2c
+			&:first-child
+				color: #454647
+				font-weight: 300
+				margin-bottom: 10px
+				a
+					text-decoration: underline
+.nav_header
+	background: #f0f3f8
+	.nav_header_wrap
+		ul
+			display: flex
+			flex-flow: row wrap
+			justify-content: center
+			align-items: center
+			li
+				a
+					color: #454647
+					display: flex
+					padding: 1rem 1.8rem
+					align-items: center
+					flex-flow: column wrap
+					border-top: 3px solid #f0f3f8
+					span
+						background: url(../img/icon_set.png) no-repeat
+						background-position: 0px 0px
+						width: 45px
+						height: 45px
+						display: block
+						cursor: pointer
+					.category_first
+						background-position: 0px 0px
+					.category_second
+						background-position: -52px 0px
+					.category_third
+						background-position: -118px 0
+					.category_fours
+						background-position: -173px 0
+					.category_fives
+						background-position: -227px 0
+					.category_six
+						background-position: -281px 0
+					.category_seven
+						background-position: -332px 0
+					.category_eight
+						background-position: -395px 0
+					&:hover
+						border-top: 3px solid #ee3346
+					&:hover .category_first
+						background-position: 0 -53px
+					&:hover .category_second
+						background-position: -51px -50px
+					&:hover .category_third
+						background-position: -120px -49px
+					&:hover .category_fours
+						background-position: -173px -49px
+					&:hover .category_fives
+						background-position: -226px -47px
+					&:hover .category_six
+						background-position: -277px -53px
+					&:hover .category_seven
+						background-position: -330px -48px
+					&:hover .category_eight
+						background-position: -388px -47px
