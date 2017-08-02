@@ -224,11 +224,130 @@ body textarea:required:valid
 						background: #fff
 						color: #e86340
 						border: 1px solid #e86340
-.price_wrapp
+.tabs_description_wrapper
+	.price_wrapp
+		ul
+			margin: 40px 0px
+			li
+				display: inline-block
+				width: 49%
+				margin: 20px 0px
+				.icon_pdf
+					background: url(../img/pdf_icon.png) no-repeat
+					width: 39px
+					height: 47px
+					float: left
+					margin-right: 15px
+				a
+
+					color: #000
+					font-size: 14px
+					span
+						color: #0271c7
+.tabs_controls
 	ul
-	display: table
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+		align-items: center
+		margin: 35px 0px
+		border-bottom: 1px solid #cccccc
 		li
-			width: 49%
+			display: flex
+			padding: 1rem 1.7rem
+			align-items: center
+			flex-flow: column wrap
+			color: #000000
+			font-size: 18px
+			font-weight: 300
+			width: 210px
+			cursor: pointer
+			border-bottom: 1px solid #ccc
+			margin-bottom: -1px
+			transition: all 0.75s
+			&.active
+				border-bottom: 1px solid #ee3346
+				color: #ee3346
+.tabs_description_inner
+	display: none
+	p
+		color: #000
+		line-height: 28px
+		padding: 0px 10px
+.tabs_description_inner.active
+	display: block
+.popular_title
+	font-size: 35px
+	font-weight: 300
+	color: #000
+	margin-bottom: 40px
+.popular_slider_item
+	a
+		.popular_descr
+			margin-bottom: 45px
+			p
+				color: #000
+		.popular_tovar_code
+			color: #999999
+			font-size: 12px
+			margin-bottom: 15px
+		.cost_block
+			display: flex
+			align-items: baseline
+			justify-content: space-between
+			.price_item
+				display: flex
+				color: #000
+				p
+					font-size: 28px
+					font-weight: 300
+				span
+					font-size: 16px
+			.price_item.old_price
+				display: none
+		.cost_block.sale
+			.price_item.old_price.active
+				display: flex
+				color: #000
+				p
+					font-size: 20px
+					font-weight: 300
+					text-decoration: line-through
+				span
+					font-size: 12px
+			.price_item
+				color: #e92c39
+.popular_slider
+	border: 1px solid #ccc
+	.popular_slider_item
+		padding: 30px 15px
+		border-right: 1px solid #ccc
+		.img_holder
+			display: flex
+			align-items: center
+			flex-direction: column
+			margin-bottom: 30px
+	.owl-item
+		&:last-child
+			.popular_slider_item
+				border-right: 0px
+	.popular_slider_item a
+		display: flex
+		flex-flow: column wrap
+		justify-content: center
+	a:hover
+		text-decoration: none
+
+
+
+
+
+
+
+
+
+
+
 
 
 

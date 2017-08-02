@@ -49,4 +49,19 @@ $(function () {
 			slideMargin: 0
 		});
 	});
+	$(".popular_slider").owlCarousel({
+		autoPlay: 5000,
+		navigation: true,
+		slideSpeed: 300,
+		paginationSpeed: 400,
+		singleItem: false,
+		items: 4,
+		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
+	});
+// tabu
+$('.tabs_controls ul').on('click', 'li:not(.active)', function () {
+	$(this)
+		.addClass('active').siblings().removeClass('active')
+		.closest('.tabs_description').find('div.tabs_description_inner').removeClass('active').eq($(this).index()).addClass('active');
+});
 });
