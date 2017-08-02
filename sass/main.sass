@@ -1,6 +1,7 @@
 @import "bourbon"
 @import "vars.sass"
 @import "reset.scss"
+@import "fonts.sass"
 @import "header.sass"
 //Load Libs SASS
 
@@ -44,16 +45,190 @@ body textarea:required:valid
 				content: ""
 			a
 				color: #999999
+// --------------------------- content wrapper start ----------------------------
+.content_wrapper_single_title
+	padding: 0px 12px
+	h2
+		font-size: 30px
+		line-height: 40px
+.content_wrapper
+	padding: 10px 0px
+	.tovar_code
+		padding: 20px 12px
+		p
+			font-size: 14px
+			color: #999999
+	.tovar_head
+		padding: 30px 12px
+		ul
+			display: flex
+			justify-content: flex-start
+			align-items: baseline
+			li
+				.tovar_cost
+					display: flex
+					margin-right: 8px
+					p
+						font-size: 40px
+						font-weight: 300
+						color: #e92c39
+					span
+						font-size: 18px
+						color: #e92c39
+						font-weight: 300
+				.tovar_cost.old_cost
+					p
+						font-size: 18px
+						color: #0f0f0f
+						text-decoration: line-through
+					span
+						font-size: 12px
+						color: #0f0f0f
+				.get_tovar
+					margin-left: 35px
+					display: flex
+					a
+						background: #ee3346
+						color: #fff
+						display: flex
+						align-items: center
+						justify-content: space-around
+						height: 48px
+						width: 100px
+						border-top-left-radius: 7px
+						border-bottom-left-radius: 7px
+						border: 1px solid transparent
+						border-right: 1px solid #d1192c
+						transition: all 0.75s
+					span
+						background: #ee3346 url(../img/chevron_white.png) no-repeat center
+						width: 37px
+						height: 48px
+						display: inline-flex
+						border-top-right-radius: 7px
+						border-bottom-right-radius: 7px
+						border-left: 1px solid #f15767
+						cursor: pointer
+					a:hover
+						background: #fff
+						color: #000
+						border: 1px solid #000
+						text-decoration: none
+				.get_one_click
+					margin-left: 10px
+					a
+						border: 1px solid #000
+						color: #2b2b2b
+						font-size: 16px
+						border-radius: 7px
+						padding: 12px 22px
+						transition: all 0.75s
+					a:hover
+						text-decoration: none
+						background: #ee3346
+						color: #fff
+						border: 1px solid #ee3346
+.tovar_slider
+	width: 100%
+	max-width: 656px
+	position: relative
+	ul.lSPager.lSGallery
+		background: #f5f8fa
+		height: 390px !important
+		padding: 25px 10px
+		li
+			height: 40px !important
+	.lSSlideWrapper.usingCss
+		width: 100%
+		max-width: 560px !important
+	.lSSlideWrapper
+		overflow: visible
+	.lSAction
+		position: absolute
+		right: 0px
+		top: 0px
+		height: 100%
+		transform: translatex(50%)
+		width: 40px
+		background: red
+	.lSSlideOuter.vertical
+		padding-right: 10px !important
+.dop_nav_tovar
+	margin: 20px 0px
 
-
-
-
-
-
-
-
-
-
+	ul
+		display: flex
+		justify-content: flex-start
+		li
+			a
+				display: flex
+				align-content: center
+				justify-content: center
+				color: #2b2b2b
+				padding: 6px 0
+				width: 165px
+				border:
+					top: 1px solid #000
+					right: 1px solid #000
+					bottom: 1px solid #000
+				transition: all 0.75s
+			a:hover
+				background: #ee3346
+				color: #fff
+				text-decoration: none
+				border:
+					top: 1px solid #ee3346
+					right: 1px solid #ee3346
+					bottom: 1px solid #ee3346
+			&:first-child
+				a
+					border:
+						left: 1px solid #000
+					border-top-left-radius: 7px
+					border-bottom-left-radius: 7px
+				a:hover
+					border:
+						left: 1px solid #ee3346
+			&:last-child
+				a
+					border-top-right-radius: 7px
+					border-bottom-right-radius: 7px
+.social_share
+	ul
+		display: flex
+		li
+			margin-right: 5px
+			a
+				background: #fafafa
+				border: 1px solid #ccc
+				border-radius: 4px
+				width: 30px
+				height: 30px
+				display: flex
+				justify-content: center
+				align-items: center
+				color: #747474
+				font-size: 16px
+				transition: all 0.75s
+				&:hover
+					background: #747474
+					color: #fafafa
+					text-decoration: none
+			&:last-child
+				a
+					background: #e86340
+					color: #fff
+					border-radius: 50%
+					border: 1px solid transparent
+					&:hover
+						background: #fff
+						color: #e86340
+						border: 1px solid #e86340
+.price_wrapp
+	ul
+	display: table
+		li
+			width: 49%
 
 
 
