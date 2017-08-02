@@ -64,4 +64,12 @@ $('.tabs_controls ul').on('click', 'li:not(.active)', function () {
 		.addClass('active').siblings().removeClass('active')
 		.closest('.tabs_description').find('div.tabs_description_inner').removeClass('active').eq($(this).index()).addClass('active');
 });
+	$('.cat_mnu li').click(function(){
+		if($('.cat_mnu li').hasClass('active')) {
+			$(this).removeClass('active');
+		}
+		else {
+			$(this).addClass('active');
+		}
+	})
 });

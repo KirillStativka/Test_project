@@ -319,14 +319,21 @@ body textarea:required:valid
 				color: #e92c39
 .popular_slider
 	border: 1px solid #ccc
+	position: relative
 	.popular_slider_item
-		padding: 30px 15px
+		padding: 0px 15px 30px 15px
 		border-right: 1px solid #ccc
 		.img_holder
 			display: flex
 			align-items: center
 			flex-direction: column
 			margin-bottom: 30px
+			min-height: 300px
+			justify-content: flex-end
+			img
+				transition: all 0.75s
+		a:hover img
+			transform: scale(1.2)
 	.owl-item
 		&:last-child
 			.popular_slider_item
@@ -337,11 +344,70 @@ body textarea:required:valid
 		justify-content: center
 	a:hover
 		text-decoration: none
-
-
-
-
-
+	.owl-buttons
+		position: absolute
+		right: 25px
+		top: -75px
+		display: flex
+		.prev_button,.next_button
+			width: 20px
+			height: 29px
+			display: block
+		.prev_button
+			background: url(../img/icon_prev.png) no-repeat
+		.next_button
+			background: url(../img/icon_next.png) no-repeat
+		.owl-prev:after
+			content: ""
+			height: 29px
+			margin: 0px 15px 0px 12px
+			border-right: 1px solid #b2b2b2
+		.owl-controls .owl-page, .owl-controls .owl-buttons div
+			display: flex
+.popular
+	margin-bottom: 100px
+// sidebar
+.but_katalog
+	margin-bottom: 40px
+	a
+		border: 1px solid #000
+		color: #000
+		padding: 13px 37px
+		text-align: center
+		display: inline-block
+		border-radius: 9px
+		transition: all 0.75s
+		&:hover
+			background: #ee3346
+			color: #fff
+			border: 1px solid #ee3346
+			text-decoration: none
+aside
+	.cat_mnu
+		li
+			line-height: 40px
+			cursor: pointer
+			span
+				background: url(../img/chevron.png) no-repeat center
+				width: 10px
+				height: 10px
+				display: inline-flex
+				margin-left: 5px
+			p
+				color: #000
+			.third_stage
+				a
+					color: #666666
+					font-size: 14px
+		.first_stage
+			li
+				font-size: 18px
+		.second_stage
+			li
+				font-size: 14px
+		li.active
+			span
+				transform: rotate(180deg)
 
 
 
