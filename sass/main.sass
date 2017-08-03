@@ -59,7 +59,7 @@ body textarea:required:valid
 			font-size: 14px
 			color: #999999
 	.tovar_head
-		padding: 30px 12px
+		padding: 15px 12px 30px 12px
 		ul
 			display: flex
 			justify-content: flex-start
@@ -259,15 +259,14 @@ body textarea:required:valid
 		ul
 			margin: 40px 0px
 			li
-				display: inline-block
+				display: inline-flex
 				width: 49%
 				margin: 20px 0px
 				.icon_pdf
 					background: url(../img/pdf_icon.png) no-repeat
-					width: 39px
+					width: 77px
 					height: 47px
-					float: left
-					margin-right: 15px
+					margin-right: 10px
 				a
 
 					color: #000
@@ -278,7 +277,7 @@ body textarea:required:valid
 	ul
 		display: flex
 		flex-flow: row wrap
-		justify-content: space-around
+		justify-content: space-between
 		align-items: center
 		margin: 35px 0px
 		border-bottom: 1px solid #cccccc
@@ -294,10 +293,10 @@ body textarea:required:valid
 			cursor: pointer
 			border-bottom: 1px solid #ccc
 			margin-bottom: -1px
-			transition: all 0.75s
 			&.active
 				border-bottom: 1px solid #ee3346
 				color: #ee3346
+				font-weight: 600
 .tabs_description_inner
 	display: none
 	p
@@ -353,6 +352,7 @@ body textarea:required:valid
 	.popular_slider_item
 		padding: 0px 15px 30px 15px
 		border-right: 1px solid #ccc
+		min-height: 588px
 		.img_holder
 			display: flex
 			align-items: center
@@ -422,7 +422,7 @@ aside
 				width: 10px
 				height: 10px
 				display: inline-flex
-				margin-left: 5px
+				margin-left: 10px
 				transform: rotate(180deg)
 			p
 				color: #000
@@ -486,7 +486,8 @@ nav
 ul.next_sub_menu li a
 	font-size: 14px
 	display: inline-block
-	padding: 0px 5px
+	padding: 0px 10px
+	line-height: 30px
 	color: #666666
 ul.next_sub_menu li a:hover, ul.next_sub_menu li:hover > a
 	background: #ee3346
@@ -509,10 +510,32 @@ ul.next_sub_menu li a:hover, ul.next_sub_menu li:hover > a
 	background: #3E4156
 	color: #ffffff
 	text-decoration: none
-
-
-
-
+.icon_menu
+	background: url(../img/menu_icon.png) no-repeat
+	width: 30px
+	height: 10px
+	display: block
+a.open-navigation.ssm-toggle-nav.ssm-nav-visible
+	display: flex
+	height: 40px
+	align-items: center
+.close_icon_mnu
+	position: absolute
+	display: none
+	top: 10px
+	right: 10px
+	font-size: 24px
+	color: #ee3346
+.mobile_holder
+	display: none
+a.open-navigation.ssm-toggle-nav.ssm-nav-visible
+	display: none
+.top_mnu_inner
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+.mobile_logo
+	display: none
 
 
 

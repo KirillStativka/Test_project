@@ -5,16 +5,27 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
-
+	.nav_header .nav_header_wrap ul li a
+		padding: 1rem 0.8rem
+	.tabs_controls ul li
+		width: auto
+	.top_line_mnu_right li .kabinet_log_wrap
+		right: -80px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-
-
+	.nav_header .nav_header_wrap ul
+		justify-content: space-around
+	.popular_slider_item a .cost_block
+		flex-direction: column
+		justify-content: center
+	.top_line_mnu_right li .kabinet_log_wrap
+		right: -40px
+	.top_line_mnu_right
+		width: 180px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -35,18 +46,221 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
+	.top_line .top_line_mnu, aside, .time_work, .breadcrubms
+		display: none
 
-
+	nav.nav_header_wrap
+		height: 100%
+		width: 280px
+		background: #f0f3f8
+		border-right: 4px solid #ee3346
+		left: 0
+		top: 0
+		z-index: 2222222222
+		position: fixed
+		overflow-y: auto
+		overflow-x: visible
+		transform: translate(-280px,0)
+		ul
+			align-items: center
+			flex-flow: column wrap
+			border-bottom: 4px solid #ee3346
+			li:after
+				display: none
+			li
+				margin: 5px 0px
+	.close_icon_mnu
+		display: block
+	.nav_header .nav_header_wrap ul
+		flex-flow: column wrap
+		li
+			width: 100%
+			a
+				padding: 0.5rem 0.8rem
+	.mobile_holder
+		display: block
+		.top_line_mnu
+			display: block
+			height: auto
+			li
+			    flex-flow: row wrap
+			.sub_menu
+				position: relative
+				top: 0px
+				left: 0px
+				width: 100%
+	.top_line_mnu li a
+		width: 100%
+	a.open-navigation.ssm-toggle-nav.ssm-nav-visible
+		display: flex
+	nav.nav_header_wrap.ssm-nav-visible
+		ul li a
+			flex-flow: row wrap
+	.nav_header_wrap ul li a span
+		margin-right: 10px
+	.mobile_contact
+		padding: 10px
+	.buts_wrap .buts_inner.bottom
+		bottom: -2px
+	.buts_wrap .buts_inner.top
+		top: -2px
+	.popular_title
+		font-size: 30px
+		margin:
+			right: 40px
+			bottom: 20px
+	.popular_slider .owl-buttons
+		top: -105px
+	.content_wrapper .tovar_head ul li .tovar_cost
+		justify-content: center
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
-
+	.dop_nav_tovar ul, .content_wrapper .tovar_head ul
+		flex-wrap: wrap
+	.content_wrapper .tovar_head ul li .get_tovar
+		margin-left: 0px
+		margin-top: 10px
+	.content_wrapper .tovar_head ul
+		li:nth-child(1), li:nth-child(2)
+			flex-direction: column
+			width: 100%
+	li.lslide img
+		width: 100%
+	.buts_wrap .buts_inner
+		width: 36px
+		height: 38px
+	.buts_wrap .buts_inner.top
+		bottom: 0px
+		right: -2px
+		top: 0px
+		transform: rotate(90deg)
+	.buts_wrap .buts_inner.bottom
+		bottom: 0px
+		left: -2px
+		top: 0px
+		right: 0px
+		transform: rotate(90deg)
+	.buts_wrap
+		height: 38px
+		width: 100%
+		bottom: 4px
+		top: auto
+	.lSSlideOuter .lSPager.lSGallery
+		padding: 0px 29px !important
+		background: #f5f8fa
+		img
+			height: 36px
+			width: 52px !important
+	ul.lSPager.lSGallery li
+		height: 36px
+		width: 52px !important
+		margin: 5px
+	.tabs_description_wrapper .price_wrapp ul li
+		width: 100%
+	.popular_slider .owl-buttons
+		top: 1px
+		height: 65px
+		background: #eff3f7
+		width: 100%
+		justify-content: center
+		right: 0px
+		align-items: center
+	.owl-controls
+		position: absolute
+		bottom: 0px
+		width: 100%
+		left: 0px
+	.owl-prev
+		border-right: 1px solid #fff
+	.owl-prev, .owl-next
+		width: 100%
+		justify-content: center
+	.popular_slider .owl-buttons .next_button, .popular_slider .owl-buttons .prev_button
+		margin-top: 25px
+	.popular_slider .owl-buttons .owl-prev:after
+		display: none
+	.popular_slider .owl-buttons .next_button, .popular_slider .owl-buttons .prev_button
+		height: 65px
+	.popular_title
+		font-size: 25px
+		margin-right: 0px
+		text-align: center
+		margin-bottom: 20px
+		padding: 0px 25px
+	.dop_nav_tovar ul
+		li:nth-child(2)
+			margin-bottom: 10px
+			a
+				border-top-right-radius: 7px
+				border-bottom-right-radius: 7px
+		li:nth-child(3)
+			a
+				border:
+					left: 1px solid #000
+				border-top-left-radius: 7px
+				border-bottom-left-radius: 7px
+	.social_share ul
+		justify-content: center
+	.tabs_controls ul li.active
+		width: 158px
+		span.icon_mobile
+			display: none
+		p
+			display: block
+	.tabs_controls ul
+		li
+			padding: 1rem 0.7rem
+			p
+				display: none
+		span.icon_mobile
+			background: url(../img/icon_tabs.png) no-repeat
+			width: 25px
+			height: 27px
+			display: flex
+		span.third
+			background-position: -27px 0px
+		span.fours
+			background-position: -59px 0px
+	.mobile_logo
+		display: flex
+		img
+			width: 100%
+			max-width: 30px
+			height: 30px
+			margin-right: 15px
+	.top_line_mnu_right
+		li
+			.input_holder input[type=search]
+				right: -90px
+				z-index: 2222
+				top: 38px
+			.kabinet_log_wrap
+				top: 85px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
-
+	.logo_wrap
+		display: none
+	.content_wrapper .tovar_head
+		ul
+		justify-content: space-between
+			li
+				.get_tovar
+					a
+						width: 85px
+					span
+						width: 27px
+				.get_one_click
+					margin-left: 0px
+					a
+						padding: 12px 10px
+	.dop_nav_tovar ul li a
+		width: 145px
+	.tabs_controls ul li.active
+		width: 125px
+	.top_line_mnu_right li .kabinet_log_wrap
+		right: -60px
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
