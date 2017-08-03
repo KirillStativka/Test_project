@@ -44,10 +44,18 @@ $(function () {
 			verticalHeight: 390,
 			vThumbWidth: 75,
 			thumbItem: 7,
-			thumbMargin: 4,
+			thumbMargin: 0,
 			keyPress: true,
 			slideMargin: 0
 		});
+	});
+	$(".but_prev").click(function () {
+		$(".lSPrev").trigger("click");
+		update($(".lSPrev"));
+	});
+	$(".but_next").click(function () {
+		$(".lSNext").trigger("click");
+		update($(".lSNext"));
 	});
 	$(".popular_slider").owlCarousel({
 		autoPlay: 5000,
@@ -58,14 +66,14 @@ $(function () {
 		items: 4,
 		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
 	});
-// tabu
-$('.tabs_controls ul').on('click', 'li:not(.active)', function () {
-	$(this)
-		.addClass('active').siblings().removeClass('active')
-		.closest('.tabs_description').find('div.tabs_description_inner').removeClass('active').eq($(this).index()).addClass('active');
-});
-	$('.cat_mnu li').click(function(){
-		if($('.cat_mnu li').hasClass('active')) {
+	// tabu
+	$('.tabs_controls ul').on('click', 'li:not(.active)', function () {
+		$(this)
+			.addClass('active').siblings().removeClass('active')
+			.closest('.tabs_description').find('div.tabs_description_inner').removeClass('active').eq($(this).index()).addClass('active');
+	});
+	$('.cat_mnu li').click(function () {
+		if ($('.cat_mnu li').hasClass('active')) {
 			$(this).removeClass('active');
 		}
 		else {

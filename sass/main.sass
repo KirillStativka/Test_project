@@ -130,29 +130,59 @@ body textarea:required:valid
 						border: 1px solid #ee3346
 .tovar_slider
 	width: 100%
-	max-width: 656px
+	max-width: 650px
 	position: relative
-	ul.lSPager.lSGallery
-		background: #f5f8fa
-		height: 390px !important
-		padding: 25px 10px
-		li
-			height: 40px !important
-	.lSSlideWrapper.usingCss
-		width: 100%
-		max-width: 560px !important
-	.lSSlideWrapper
-		overflow: visible
-	.lSAction
-		position: absolute
-		right: 0px
+.lSSlideOuter.vertical .lSGallery
+	position: absolute !important
+	right: 0
+	top: 0
+	padding: 10px !important
+	background: #f5f8fa
+	margin: 35px 0px !important
+	li
+		height: 37px !important
+		margin-bottom: 9px !important
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover
+	border-radius: 0px !important
+	border: 1px solid #1486cc
+.lSSlideOuter .lSPager.lSGallery img
+	height: 37px
+.lSAction
+	display: none !important
+.buts_wrap
+	display: block
+	position: absolute
+	right: 0px
+	top: 0px
+	pointer-events: none
+	height: 100%
+	width: 75px
+	.but_next, .but_prev
+		background-position: 0px 0px
+		background: #f5f8fa url(../img/controls_slider.png) no-repeat
+		display: block
+		width: 15px
+		cursor: pointer
+		pointer-events: visible
+		height: 9px
+	.but_next
 		top: 0px
-		height: 100%
-		transform: translatex(50%)
-		width: 40px
-		background: red
-	.lSSlideOuter.vertical
-		padding-right: 10px !important
+	.but_prev
+		bottom: 0px
+		background-position: 0px -13px
+	.buts_inner
+		width: 100%
+		height: 35px
+		background: #f5f8fa
+		position: absolute
+		display: flex
+		justify-content: center
+		align-items: center
+	.buts_inner.top
+		top: 0px
+	.buts_inner.bottom
+		bottom: 0px
+
 .dop_nav_tovar
 	margin: 20px 0px
 
@@ -362,8 +392,8 @@ body textarea:required:valid
 			height: 29px
 			margin: 0px 15px 0px 12px
 			border-right: 1px solid #b2b2b2
-		.owl-controls .owl-page, .owl-controls .owl-buttons div
-			display: flex
+	.owl-controls .owl-page, .owl-controls .owl-buttons div
+		display: flex
 .popular
 	margin-bottom: 100px
 // sidebar
@@ -393,6 +423,7 @@ aside
 				height: 10px
 				display: inline-flex
 				margin-left: 5px
+				transform: rotate(180deg)
 			p
 				color: #000
 			.third_stage
@@ -407,8 +438,77 @@ aside
 				font-size: 14px
 		li.active
 			span
-				transform: rotate(180deg)
-
+				transform: rotate(0deg)
+nav
+	display:block
+.menu
+	display:block
+.menu li
+	position: relative
+	z-index: 100
+	line-height: 40px
+.menu li:first-child
+	margin-left: 0
+.menu li a
+	font-weight: 600
+	text-decoration: none
+	font-size: 18px
+	display: block
+	color: #000
+	-webkit-transition: all 0.2s ease-in-out 0s
+	-moz-transition: all 0.2s ease-in-out 0s
+	-o-transition: all 0.2s ease-in-out 0s
+	-ms-transition: all 0.2s ease-in-out 0s
+	transition: all 0.2s ease-in-out 0s
+.menu li a:hover,
+.menu li:hover > a span
+	transform: rotate(0deg)
+.menu ul
+	display: none
+	margin: 0
+	padding: 0
+	width: 100%
+	top: 43px
+	left: 0px
+	background: #ffffff
+.menu ul li
+	display: block
+	float: none
+	background: none
+	margin: 0
+	padding: 0
+.menu ul li a
+	font-size: 14px
+	font-weight: normal
+	display: inline-block
+	padding: 0px 5px
+	color: #000
+ul.next_sub_menu li a
+	font-size: 14px
+	display: inline-block
+	padding: 0px 5px
+	color: #666666
+ul.next_sub_menu li a:hover, ul.next_sub_menu li:hover > a
+	background: #ee3346
+	border-radius: 25px
+	color: #fff
+.menu li:hover > ul
+	display: block
+.menu ul ul
+	left: 149px
+	top: 0px
+.mobile-menu
+	display: none
+	width: 100%
+	padding: 11px
+	background: #3E4156
+	color: #ffffff
+	text-transform: uppercase
+	font-weight: 600
+.mobile-menu:hover
+	background: #3E4156
+	color: #ffffff
+	text-decoration: none
 
 
 
